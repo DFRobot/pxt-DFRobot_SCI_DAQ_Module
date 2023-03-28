@@ -1,6 +1,6 @@
 {
     "name": "rp2040SciDaqModule",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "",
     "license": "MIT",
     "dependencies": {
