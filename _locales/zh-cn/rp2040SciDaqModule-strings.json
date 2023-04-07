@@ -1,6 +1,7 @@
 {
     "rp2040SciDaqModule.begin|block": "初始化设备直到成功 ID: %address",
-    "rp2040SciDaqModule.getPortValueString|block": "获取接口 %port %key %type",
+    "rp2040SciDaqModule.getPortValueString|block": "获取接口 %port %key 数值（String）",
+    "rp2040SciDaqModule.getPortUnitString|block": "获取接口 %port %key 单位（String）",
     "rp2040SciDaqModule.getPortValueNumber|block": "获取接口 %port %key 数值（float）",
     "rp2040SciDaqModule.getTimeStamp|block": "获取最新数据的刷新时间",
     "rp2040SciDaqModule.SciDaqModuleAddress.ADDRESS1|block": "0x21",

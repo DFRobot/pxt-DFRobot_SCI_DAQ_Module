@@ -89,17 +89,24 @@ namespace rp2040SciDaqModule {
     * Get data values of the attribute named keys from the sensor with a specific sku among sensors connected to the designated port
     * @param port Port select, and parameter search range, eg: "SciDaqModulePort.PortAll"
     * @param key Sensor attribute name, eg: "Analog"
-    * @param type to type, eg: "SciDaqModuleReturnDataType.ValueString"
     */
 
-    //% block="get Interface %port %key %type" 
+    //% block="get Interface %port %key Value(String)"
     //% weight=80
-    export function getPortValueString(port: SciDaqModulePort, key: string, type: SciDaqModuleReturnDataType): string {
-        if (type == SciDaqModuleReturnDataType.ValueString) {
-            return getValue(port, key);
-        } else {
+    export function getPortValueString(port: SciDaqModulePort, key: string): string {
+        return getValue(port, key);
+    }
+
+    /**
+    * Get data values of the attribute named keys from the sensor with a specific sku among sensors connected to the designated port
+    * @param port Port select, and parameter search range, eg: "SciDaqModulePort.PortAll"
+    * @param key Sensor attribute name, eg: "Analog"
+    */
+
+    //% block="get Interface %port %key Unit(String)"
+    //% weight=70
+    export function getPortUnitString(port: SciDaqModulePort, key: string): string {
             return getUnit(port, key);
-        }
     }
 
     /**
